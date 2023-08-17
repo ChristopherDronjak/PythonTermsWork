@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Interiors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/185c19c7d3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="jumbotron text-center">
+            <div class="row media">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/Logo2.png') }}" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-info text-white justify-content-center" onmouseover="ResetAlignment()">
+              <ul class="navbar-nav">
+                <li class="nav-item">  
+                    <a class="nav-link text-white" href="/" target="_blank">Home <span class="sr-only">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/contact" target="_blank">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/about" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/shop" target="_blank">Shop</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <hr class="border-top">
+    <h2 id="ContactUsFont" class="text-center fw-bold" onclick="UpdateFont()">Contact Us</h2>
+    <div class="container-fluid">
+
+        <div id="ContactUs" class="row justify-content-center" onmouseover="ChangeAlignment()" onmouseout="ResetAlignment()">
+            <div class="text-center">
+                <h4 class="text-center">Address: 69 Cone Street</h4>
+                <h4 class="text-center">Phone Number: +080050012</h4>
+                <h4 class="text-center">Email: captivatesupport@gmail.com</h4>
+                <h4 class="text-center">Fax: 5748734</h4>
+            </div>
+</div>
+
+            <div class="col-xs-1 center-block">
+                <form id="contactForm">
+
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Please Enter your Name.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="emailAddress">Email Address</label>
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Please Enter your Email <Address></Address>.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Please Enter a Valid Email <Address></Address></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input class="form-control" id="subject" type="text" placeholder="Subject" data-sb-validations="required"/>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Please Include a Subject.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Please Write your Message.</div>
+                    </div>
+    
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">Query submitted! Our team will get back with you within 24 hours.</div>
+                    </div>
+
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error. Please try again.</div>
+                    </div>
+    
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg bg-dark" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <style>
+            body {
+    background-color: #FAEACB;
+    font-family: 'Courier New', Courier, monospace;
+    }
+        </style>
+    <footer>
+        <div class="container-fluid text-center">
+            <div class="p-sm-3"></div>
+            <a href="https://www.facebook.com" class="fa fa-facebook text-secondary fa-xl"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram text-secondary fa-xl"></a>
+            <a href="https://nz.linkedin.com" class="fa fa-linkedin text-secondary fa-xl"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter text-secondary fa-xl"></a>
+        </div>
+    </footer>
+
+    <script>
+        function UpdateFont() {
+            var font = document.getElementById('ContactUsFont');
+            
+            font.style.color = "blue";
+            font.style.fontSize = "90px";
+        }
+
+        function ChangeAlignment() {
+            var ref = document.getElementById('ContactUs');
+
+            ref.style.cssFloat = 'right';
+        }
+
+        function ResetAlignment() {
+            var ref = document.getElementById('ContactUs');
+            ref.style.cssFloat = 'none';
+        }
+    </script>
+</body>
+</html>

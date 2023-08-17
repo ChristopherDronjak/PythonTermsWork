@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Interiors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/185c19c7d3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="jumbotron text-center">
+            <div class="row media">
+                <div class="container">
+                  <img src="{{ url_for('static', filename='images/Logo2.png') }}" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-info text-white justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">  
+                  <a class="nav-link text-white" href="/" target="_blank">Home <span class="sr-only">Home</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="/contact" target="_blank">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="/about" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="/shop" target="_blank">Shop</a>
+              </li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr class="border-top">
+    <h2 class="text-center fw-bold">Products</h2>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <div class="card text-center w-auto" style="width: 30rem;">
+                    <img class="card-img" src="https://assets.mitre10.co.nz/sys-master/productimages/h3c/h71/10468389748766/386272xlg.jpg" alt="Mirrors">
+                    <div class="card-body">
+                      <h5 class="card-title">Mirrors</h5>
+                      <p class="card-text">Beautiful Mirrors. Starting at $80</p>
+                      <button class="btn btn-primary" onclick="">Buy Now!</button>
+                    </div>
+                </div>
+
+                <div class="card text-center w-auto" style="width: 30rem;">
+                    <img class="card-img" src="https://assets.mitre10.co.nz/sys-master/productimages/hdd/hd4/9915470118942/354015xlg.jpg" alt="Tables">
+                    <div class="card-body">
+                      <h5 class="card-title">Tables</h5>
+                      <p class="card-text">Tables for the Whole Family! From $400</p>
+                      <button class="btn btn-primary" onclick="">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center w-auto" style="width: 30rem;">
+                    <img class="card-img" src="https://assets.mitre10.co.nz/sys-master/productimages/hba/h33/10371612737566/378600xlg.jpg" alt="Wallpapers">
+                    <div class="card-body">
+                      <h5 class="card-title">Wallpapers</h5>
+                      <p class="card-text">Amazing Wallpapers starting from $40</p>
+                      <button class="btn btn-primary" onclick="">Buy Now!</button>
+                    </div>
+                </div>
+
+                <div class="card text-center w-auto" style="width: 30rem;">
+                    <img class="card-img" src="https://assets.mitre10.co.nz/sys-master/productimages/h00/ha4/8828410855454/239750xlg.jpg_Mitre10-WorkingFormat" alt="Lights">
+                    <div class="card-body">
+                      <h5 class="card-title">Lights</h5>
+                      <p class="card-text">Stunning Lights. Starting from $80</p>
+                      <button class="btn btn-primary" onclick="">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <video src="C:\Users\Cam\Documents\lol.mp4" controls></video>
+              <div class="card-body">
+                <h5 class="card-title">Mattresses</h5>
+                <p class="card-text">Get the Best Sleep of your life with our memory foam beds! Starting from $400</p>
+                <img class="card-img" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/10/689012-The-8-Best-Affordable-Mattresses-of-2020-1296x728-Header-81b9bf-1.jpg?w=1155&h=1528" alt="Mattresses">
+                <a href="#" class="btn btn-primary">Buy Now!</a>
+              </div>
+            </div>
+        </div>
+        <style>
+          body {
+  background-color: #FAEACB;
+  font-family: 'Courier New', Courier, monospace;
+  }
+      </style>
+        <footer>
+            <div class="container-fluid text-center">
+                <div class="p-sm-3"></div>
+                <p>Find us on our Socials!</p>
+                <a href="https://www.facebook.com" class="fa fa-facebook text-secondary fa-2xl"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram text-secondary fa-2xl"></a>
+                <a href="https://nz.linkedin.com" class="fa fa-linkedin text-secondary fa-2xl"></a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter text-secondary fa-2xl"></a>
+                <div class="p-sm-3"></div>
+            </div>
+        </footer>
+</body>
+</html>
